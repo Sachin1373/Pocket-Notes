@@ -1,30 +1,63 @@
-.intro-wrapper{
+.intro-wrapper {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+    padding: 20px;
     background-color: #efdbd5;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between;
-}
-.intro-page{
-    display: flex;
-    gap: 15px;
-    line-height: 30px;
-    height: 300px;
-    width: 550px;
-    margin-top: 230px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.intro-page img{
-    height: 200px;
-    width: 350px;
-}
-.footer{
-    display: flex;
-    gap: 5px;
-    margin-bottom: 20px;
 }
 
+.intro-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 550px; /* Limit max width for better readability */
+    margin: 0 auto; /* Centering the content */
+}
+
+.intro-page img {
+    height: auto;
+    width: 100%;
+    max-width: 350px; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space between image and text */
+}
+
+.intro-page h1 {
+    font-size: 24px;
+    margin-bottom: 10px; /* Space between title and paragraph */
+}
+
+.intro-page p {
+    font-size: 16px;
+    line-height: 1.5; /* Improve readability */
+    padding: 0 15px; /* Add some padding on sides */
+}
+
+/* Footer styles */
+.footer {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin-left: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .intro-page h1 {
+        font-size: 20px; /* Reduce font size on smaller screens */
+    }
+
+    .intro-page p {
+        font-size: 14px; /* Reduce paragraph font size */
+    }
+
+    .footer p {
+        font-size: 12px; /* Smaller footer text */
+    }
+}
