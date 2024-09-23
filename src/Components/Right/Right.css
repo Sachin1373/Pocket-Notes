@@ -1,0 +1,80 @@
+.right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 710px;
+  width: 70%;
+  background-color:#efdbd5;
+  border-radius: 0px 8px;
+
+}
+.group-header{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  height: 70px;
+  padding-left: 10px;
+  background-color: gray;
+}
+.input-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background-color: gray;
+  border-radius: 0px 0px 0px 8px;
+}
+.input-section textarea{
+  width: 95%;
+  height: 130px;
+  border: none;
+  border-style: none;
+  font-family: Roboto;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 8px;
+    
+}
+
+textarea::placeholder{
+  font-weight: 700;
+  font-size: 20px;
+  
+}
+
+.send{
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 89%;
+  left: 95%;
+  cursor: pointer;
+}
+.notes-section{
+  padding-top: 20px;
+  height: 500px;
+  background-color: #efdbd5;
+  padding-left: 20px;
+  overflow-y: auto;
+}
+.notes-section ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.notes-section li{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.date-time{
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+.note-text{
+  margin-left: 20px;
+}
+
